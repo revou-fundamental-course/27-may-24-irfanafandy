@@ -26,7 +26,7 @@
         <!-- Home -->
         <section id="home">
             <header>
-                <h1>Hi, Welcome To Website</h1>
+                <h1>Hi <span id="sender-hai"></span>, Welcome To Website</h1>
             </header>
             <article>
                 <p>Ini adalah Website latihan pertama</p>
@@ -40,7 +40,7 @@
         <!-- Our Facilities -->
         <section id="facilities">
             <header>
-                <h1>Our Facilities</h1>
+                <h1>Our Facilities </h1>
             </header>
             <article class="facility-list">
                 <div class="facilities-text-center">
@@ -77,7 +77,7 @@
                                 <td class="label">Nama</td>
                                 <td class="label">:</td>
                                 <td>
-                                    <input type="text" class="input-text" name="nama" id="nama" placeholder="Nama"/>
+                                    <input type="text" class="input-text" name="full-name" id="full-name" placeholder="Nama"/>
                                 </td>
                             </tr>
 
@@ -85,7 +85,7 @@
                                 <td class="label">Tanggal Lahir</td>
                                 <td class="label">:</td>
                                 <td>
-                                    <input type="date" class="input-date" name="tanggal_lahir" id="tgl_lhr"/>
+                                    <input type="date" class="input-date" name="birth-date" id="birth-date"/>
                                 </td>
                             </tr>
 
@@ -93,9 +93,9 @@
                                 <td class="label">Jenis Kelamin</td>
                                 <td class="label">:</td>
                                 <td>
-                                    <input type="radio" class="input-radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki"/>
+                                    <input type="radio" class="input-radio" id="laki-laki" name="gender" value="Laki-laki"/>
                                     <label for="laki-laki">Laki-laki</label>
-                                    <input type="radio" class="input-radio" id="perempuan" name="jenis_kelamin" value="Perempuan"/>
+                                    <input type="radio" class="input-radio" id="perempuan" name="gender" value="Perempuan"/>
                                     <label for="perempuan">Perempuan</label>
                                 </td>
                             </tr>
@@ -121,8 +121,14 @@
 
                 <!-- Result -->
                 <section class="result-container">
-                    <div class="form-result" id="form-print">
-                    <p id="error-name"></p>
+                    <div class="form-result">
+                        <div>
+                            <p>Nama : <span id="sender-name"></span></p>
+                            <p>Tanggal Lahir : <span id="sender-birth"></span></p>
+                            <p>Jenis Kelamin : <span id="sender-gender"></span></p>
+                            <p>Pesan : <span id="sender-message"></span></p>
+                        </div>
+
                     </div>
                 </section>
             </section>  

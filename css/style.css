@@ -3,7 +3,7 @@
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: lightskyblue;
+    background-color: rgb(89, 116, 213);
 }
 
 nav>section {
@@ -12,16 +12,14 @@ nav>section {
 }
 
 .logo-icon {
-    /* padding: 2px;
+    padding: 10px;
     height: 50px;
     width: 50px;
-    border-radius: 50%;
-    background-image: url(https://picsum.photos/200);
+    /* border-radius: 50%;
+    background-image: url(assets/logo3.png);
     background-size: cover;
     background-repeat: no-repeat; */
-    padding: 10px;
-    width: 100px;
-    height: auto;
+ 
 
 }
 
@@ -45,6 +43,7 @@ nav>section {
 .facility-list {
     display: flex;
     justify-content: space-around;
+    background-color: rgb(145, 234, 208);
 }
 
 .facilities-border-1 {
@@ -73,7 +72,7 @@ nav>section {
 }
 
 .form-result {
-    height: 100px;
+    height: 240px;
     border: 1px solid black;
 }
 
@@ -83,7 +82,7 @@ nav>section {
 }
 
 .form-table {
-   
+ height: 50px;  
 }
 
 .label {
@@ -102,6 +101,9 @@ nav>section {
 
 .button {
     width: 327px;
+    background-color: rgb(145, 234, 208);
+    border-radius: 5px;
+    /* border-style: dotted; */
 }
 
 .result-container {
