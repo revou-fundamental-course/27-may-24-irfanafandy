@@ -5,8 +5,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Irpan</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <nav>
+        <div class="logo-icon">
+            <img src="assets/logo3.png" alt="Logo sekolah">
+        </div>
+        
+        <section>
+            <a class="nav-item" href="#home">Home</a>
+            <a class="nav-item" href="#facilities">Our Facilities</a>
+            <a class="nav-item" href="#message-us">Message Us</a>
+        </section>
+    </nav>
     
+    <hr>
+
+    <section>
+        <!-- Home -->
+        <section id="home">
+            <header>
+                <h1>Hi, Welcome To Website</h1>
+            </header>
+            <article>
+                <p>Ini adalah Website latihan pertama</p>
+
+                <div class="banner-container"></div>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Our Facilities -->
+        <section id="facilities">
+            <header>
+                <h1>Our Facilities</h1>
+            </header>
+            <article class="facility-list">
+                <div class="facilities-text-center">
+                    <div class="facilities-border-1" style="width: 80px; height: 80px;"></div>
+                    <h5>Professional Teacher</h5>
+                </div>
+
+                <div class="facilities-text-center">
+                    <div class="facilities-border-2" style="width: 80px; height: 80px;"></div>
+                    <h5>Sport Field</h5>
+                </div>
+
+                <div class="facilities-text-center">
+                    <div class="facilities-border-3" style="width: 80px; height: 80px;"></div>
+                    <h5>Classroom</h5>
+                </div>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Message Us -->
+        <section id="message-us">
+            <header>
+                <h1>Message Us</h1>
+            </header>
+
+            <section class="message-us-section">
+                <!-- From -->
+                <section>
+                    <form name="message-form" onsubmit="return validateForm()">
+                        <table>
+                            <tr class="form-table">
+                                <td class="label">Nama</td>
+                                <td class="label">:</td>
+                                <td>
+                                    <input type="text" class="input-text" name="nama" id="nama" placeholder="Nama"/>
+                                </td>
+                            </tr>
+
+                            <tr class="form-table">
+                                <td class="label">Tanggal Lahir</td>
+                                <td class="label">:</td>
+                                <td>
+                                    <input type="date" class="input-date" name="tanggal_lahir" id="tgl_lhr"/>
+                                </td>
+                            </tr>
+
+                            <tr class="form-table">
+                                <td class="label">Jenis Kelamin</td>
+                                <td class="label">:</td>
+                                <td>
+                                    <input type="radio" class="input-radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki"/>
+                                    <label for="laki-laki">Laki-laki</label>
+                                    <input type="radio" class="input-radio" id="perempuan" name="jenis_kelamin" value="Perempuan"/>
+                                    <label for="perempuan">Perempuan</label>
+                                </td>
+                            </tr>
+                            
+                            <tr class="form-table">
+                                <td class="label">Pesan</td>
+                                <td class="label">:</td>
+                                <td>
+                                    <textarea name="message" class="input-text" id="message" placeholder="Ketik Pesan" rows="5"></textarea>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3">
+                                    <button type="submit" class="button" id="submit" value="submit">Submit</button>
+                                    <p id="error-name"></p>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </section>
+
+                <!-- Result -->
+                <section class="result-container">
+                    <div class="form-result" id="form-print">
+                    <p id="error-name"></p>
+                    </div>
+                </section>
+            </section>  
+        </section>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
