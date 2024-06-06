@@ -41,6 +41,7 @@ nav>section {
 }
 
 .facility-list {
+    padding: 30px;
     display: flex;
     justify-content: space-around;
     background-color: rgb(145, 234, 208);
